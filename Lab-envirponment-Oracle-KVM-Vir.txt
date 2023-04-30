@@ -1,0 +1,71 @@
+- LAB Environment:-
+
+Oracle Engine 
+Oracle KVM-host 
+
+1st Setup:-
+**********
+Engine     - 192.168.0.159    ole-node10.example.com        (admin/oraclekvm)
+KVM-host01 - 192.168.0.166   ol-kvm-phyhost01.example.com 
+KVM-host02 - 192.168.0.107   ol-kvm-phyhost02.example.com 
+
+/etc/hosts - entry 
+192.168.0.159      ole-node10.example.com       ole-node10
+192.168.0.107   ol-kvm-phyhost02.example.com   ol-kvm-phyhost02
+192.168.0.166   ol-kvm-phyhost01.example.com   ol-kvm-phyhost01
+
+
+
+2nd Setup:- Individual User (X=1-8)
+**********
+172.168.1.15X   - CentOSv85 (Base node)   - lab-node05.example.com
+172.168.1.16X   - Oracle Engine           - ole-node01.example.com
+172.168.1.17X   - Oracle KVm-HOST         - ol-kvm-host01.example.com 
+
+172.168.1.18X   - Can be used 
+172.168.1.19X 
+
+root/redhat
+labuser/redhat 
+
+
+Example: - 172.168.1.151 
+
+vim /etc/hosts
+
+192.168.0.159      ole-node10.example.com       ole-node10
+192.168.0.107   ol-kvm-phyhost02.example.com   ol-kvm-phyhost02
+192.168.0.166   ol-kvm-phyhost01.example.com   ol-kvm-phyhost01
+
+###
+192.168.0.162   ole-node01.example.com        ole-node01
+192.168.0.174   ol-kvm-host01.example.com    ol-kvm-host01
+
+
+Note: Get your IP (Have internet access - yum.oracle.com/linux.oracle.com)
+   hostname -I (use your 192.168.0.XX)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
