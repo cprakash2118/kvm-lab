@@ -1,0 +1,10 @@
+---
+- name: Testing 
+  hosts: webservers
+  tasks:
+    - name: Reapply SELinux role to complete changes
+      include_role:
+         name: redhat.rhel_system_roles.selinux
+      vars:
+       - selinux_policy: targeted
+       - selinux_state: enforcing
